@@ -14,6 +14,6 @@ jobs:
           password: ${{ secrets.WABLI_SERVER_SSH_PASSWORD }}
           port: ${{ secrets.WABLI_SERVER_SSH_PORT }}
           script: >-
-            ./wabli-applications/deploy.sh -b main -d local-host -r
+            ./wabli-applications/deploy.sh -b main -d wabli-contest-82206 -r
             https://github.com/wabliplatform/62ac8971714d809575adb48a-server-ERSMUS.git
-            -f 62ac8971714d809575adb48a-server-ERSMUS -p 8090
+            -f 62ac8971714d809575adb48a-server-ERSMUS -p 3088
